@@ -1,0 +1,6 @@
+C:\Users\tural\Desktop\methodss\methodss\bin\Debug\methodss.exe
+C:\Users\tural\Desktop\methodss\methodss\bin\Debug\methodss.pdb
+C:\Users\tural\Desktop\methodss\methodss\obj\Debug\methodss.csproj.AssemblyReference.cache
+C:\Users\tural\Desktop\methodss\methodss\obj\Debug\methodss.csproj.CoreCompileInputs.cache
+C:\Users\tural\Desktop\methodss\methodss\obj\Debug\methodss.exe
+C:\Users\tural\Desktop\methodss\methodss\obj\Debug\methodss.pdb
