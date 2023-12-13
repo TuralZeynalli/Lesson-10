@@ -125,8 +125,9 @@ namespace methodss
             #endregion
         }
 
-        static string WriteNameSurname(string name, string surname) 
-        
+        #region lesson 7den task-1
+        static string WriteNameSurname(string name, string surname)
+
         {
             if (name.Length > 2 && surname.Length > 2)
             {
@@ -139,9 +140,11 @@ namespace methodss
             }
 
         }  //return
+        #endregion
 
-        static bool Equalize(int num1, int num2) 
-        
+        #region Lesson 7den task-2
+        static bool Equalize(int num1, int num2)
+
         {
             if (num1 == 30 || num2 == 30 || num1 + num2 == 30)
             {
@@ -154,7 +157,9 @@ namespace methodss
             }
 
         }  //return
+        #endregion
 
+        #region Lesson 7den task -3
         static void MeasureDegree(int num1)
         {
             if (num1 < 15)
@@ -162,20 +167,22 @@ namespace methodss
                 Console.WriteLine("Hava soyuqdur");
             }
 
-           else if (num1 >= 15 && num1 < 25)
+            else if (num1 >= 15 && num1 < 25)
             {
                 Console.WriteLine("Hava mulayimdir");
             }
 
             else if (num1 > 25)
             {
-                Console.WriteLine("hava istidir"); 
+                Console.WriteLine("hava istidir");
             }
 
-         }  //console.writeline
+        }  //console.writeline
+        #endregion
 
-        static string CavabBirOlan(string variant) 
-        
+        #region Lesson 7den task-4
+        static string CavabBirOlan(string variant)
+
         {
             switch (variant)
 
@@ -189,13 +196,13 @@ namespace methodss
                 case "c":
                     Console.WriteLine("cavab yanlisdir");
                     break;
-                case "d": 
+                case "d":
                     Console.WriteLine("cavab yanlisdir");
                     break;
                 case "e":
                     Console.WriteLine("cavab yanlisdir");
                     break;
-             default:
+                default:
                     Console.WriteLine("qeyd etdiyiniz variant yuxaridaki varinatlar arasinda yoxdur");
                     break;
             }
@@ -203,8 +210,9 @@ namespace methodss
 
         }  //return
 
-        static string CavabIkiOlan (string variant) 
-        
+
+        static string CavabIkiOlan(string variant)
+
         {
             switch (variant)
 
@@ -233,8 +241,8 @@ namespace methodss
 
         }  //return
 
-        static string CavabUcOlan (string variant) 
-        
+        static string CavabUcOlan(string variant)
+
         {
 
             switch (variant)
@@ -259,13 +267,15 @@ namespace methodss
                     Console.WriteLine("qeyd etdiyiniz variant yuxaridaki varinatlar arasinda yoxdur");
                     break;
             }
-         
+
             return "variant";
 
         }  //return
+        #endregion
 
-        static void KvadratQaytar(int num1, int num2) 
-        
+        #region Lesson 8den task -1
+        static void KvadratQaytar(int num1, int num2)
+
         {
             int sum = 0;
             for (int i = num1; i < num2; i++)
@@ -273,16 +283,19 @@ namespace methodss
                 if (i % 2 == 0)
                 {
 
-                    sum += i*i;
+                    sum += i * i;
                 }
-               
+
             }
             Console.WriteLine(sum);
 
         }   //console.writeline
 
-        static void MeasureAge (string name, string surname, int age) //console.writeline
-        
+        #endregion
+
+        #region Lesson 9dan task-2
+        static void MeasureAge(string name, string surname, int age) //console.writeline
+
         {
 
             int diff = 18 - age;
@@ -292,7 +305,7 @@ namespace methodss
                 {
                     age++;
 
-                    Console.WriteLine(age + "yasiniz mubarek" );
+                    Console.WriteLine(age + "yasiniz mubarek");
 
                 }
 
@@ -302,9 +315,11 @@ namespace methodss
                 Console.WriteLine(age + "yasiniz mubarek");
             }
 
-        
-        }
 
+        }
+        #endregion
+
+        #region Lesson 9dan task-3
         static int ArrayHesabla(int[] numbers)
 
         {
@@ -312,19 +327,22 @@ namespace methodss
 
             foreach (var number in numbers)
             {
-                if (number%2 == 0)
+                if (number % 2 == 0)
                 {
-                    sum+= number;
+                    sum += number;
                 }
-                
+
             }
             return sum;
-          
+
 
         }  //return
 
+        #endregion
+
+        #region Lesson 9dan task -4
         static int ArrayEdediOrtaHesabla(int[] numbers) //return
-        
+
         {
             int sum = 0;
             foreach (int number in numbers)
@@ -333,11 +351,13 @@ namespace methodss
             }
 
             return sum / numbers.Length;
-        
-        }
 
-        static int IkiArrayEnBoyukTopla(int[] numbers1, int [] numbers2) //return
-        
+        }
+        #endregion
+
+        #region Lesson 9dan task-5
+        static int IkiArrayEnBoyukTopla(int[] numbers1, int[] numbers2) //return
+
         {
             int sum = 0;
             foreach (int number in numbers1)
@@ -351,14 +371,19 @@ namespace methodss
             int sum1 = 0;
             foreach (int number2 in numbers2)
             {
-                if (number2>sum1)
+                if (number2 > sum1)
                 {
                     sum1 = number2;
                 }
             }
-            return sum +sum1;
-          
+            return sum + sum1;
+
         }
+        #endregion
+        
+      
+
+       
         
     }
 }
